@@ -44,7 +44,7 @@ public class SetManagerCommand implements CommandExecutor {
             if (!getHelper().playerInGroup(target.getUniqueId(), "director")) {
               getHelper().playerAddPermission(target.getUniqueId(), permission);
               getHelper().playerAddGroup(target.getUniqueId(), "director");
-              getLogger().send("fcfa", Lang.USER_SET_MANAGER.getConfigValue(new String[] { target.getName(), nameUppercase }));
+              getLogger().send("fcba", Lang.USER_SET_MANAGER.getConfigValue(new String[] { target.getName(), nameUppercase }));
             } else
               getLogger().send(sender, Lang.USER_ALREADY_MANAGER.getConfigValue(new String[] { target.getName(), nameUppercase }));
           } else
