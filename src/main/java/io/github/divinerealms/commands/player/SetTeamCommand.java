@@ -56,6 +56,6 @@ public class SetTeamCommand implements CommandExecutor {
 
   private void setTeam(String name, OfflinePlayer target, String nameUppercase) {
     String finalName = name.toLowerCase();
-    getHelper().getUserManager().modifyUser(target.getUniqueId(), user -> user.data().add(InheritanceNode.builder(finalName).withContext("server", "football").build())).whenComplete((v, th) -> getLogger().send("fcfa", Lang.USER_ADDED_TO_TEAM.getConfigValue(new String[]{target.getName(), nameUppercase})));
+    getHelper().getUserManager().modifyUser(target.getUniqueId(), user -> user.data().add(InheritanceNode.builder(finalName).build())).whenComplete((v, th) -> getLogger().send("fcba", Lang.USER_ADDED_TO_TEAM.getConfigValue(new String[]{target.getName(), nameUppercase})));
   }
 }
