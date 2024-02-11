@@ -52,7 +52,7 @@ public class SuspendCommand implements CommandExecutor {
         }
 
         if (args[1].equalsIgnoreCase(target.getName())) {
-          final InheritanceNode group = InheritanceNode.builder("suspend").withContext("server", "football").expiry(time.toMilliseconds(), TimeUnit.MILLISECONDS).build();
+          final InheritanceNode group = InheritanceNode.builder("suspend").expiry(time.toMilliseconds(), TimeUnit.MILLISECONDS).build();
 
           getHelper().getUserManager().modifyUser(target.getUniqueId(), user -> {
             final DataMutateResult result = user.data().add(group);

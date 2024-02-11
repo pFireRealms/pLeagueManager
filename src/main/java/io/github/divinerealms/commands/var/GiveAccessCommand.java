@@ -62,7 +62,7 @@ public class GiveAccessCommand implements CommandExecutor {
               final DataMutateResult result = u.data().add(tempPermission);
 
               if (result.wasSuccessful())
-                getLogger().send("fcfa", Lang.VAR_GIVEN_ACCESS_1.getConfigValue(new String[]{target.getName(), time.toString()}));
+                getLogger().send("fcba", Lang.VAR_GIVEN_ACCESS_1.getConfigValue(new String[]{target.getName(), time.toString()}));
               else
                 getLogger().send(sender, Lang.VAR_ALREADY_HAS_ACCESS.getConfigValue(new String[]{target.getName()}));
             });

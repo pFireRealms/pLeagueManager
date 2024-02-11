@@ -44,7 +44,7 @@ public class UnsetManagerCommand implements CommandExecutor {
             if (getHelper().playerInGroup(target.getUniqueId(), "director")) {
               getHelper().playerRemovePermission(target.getUniqueId(), permission);
               getHelper().playerRemoveGroup(target.getUniqueId(), "director");
-              getLogger().send("fcfa", Lang.USER_UNSET_MANAGER.getConfigValue(new String[]{target.getName(), nameUppercase}));
+              getLogger().send("fcba", Lang.USER_UNSET_MANAGER.getConfigValue(new String[]{target.getName(), nameUppercase}));
             } else
               getLogger().send(sender, Lang.USER_NOT_MANAGER.getConfigValue(new String[]{target.getName(), nameUppercase}));
           } else

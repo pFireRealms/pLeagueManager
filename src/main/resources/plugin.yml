@@ -1,6 +1,8 @@
-name: LeagueManager
+name: pLeagueManager
 version: 1.2.5
-author: Neeonn
+authors:
+  - Neeonn
+  - Maatijaa
 depend:
   - LuckPerms
   - WorldGuard
