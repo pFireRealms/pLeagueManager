@@ -1,5 +1,5 @@
 # pLeagueManager
-![](https://img.shields.io/github/license/DivineRealms/LeagueManager.svg) ![](https://img.shields.io/github/license/DivineRealms/LeagueManager.svg) 
+![](https://img.shields.io/github/license/pFireRealms/pLeagueManager.svg) ![](https://img.shields.io/github/files/pFireRealms/pLeagueManager.svg) 
 
 Plugin is designed for easier league organisation.
 
