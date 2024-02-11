@@ -58,9 +58,9 @@ public class UnsetTeamCommand implements CommandExecutor {
 
   private void unsetTeam(CommandSender sender, OfflinePlayer target, String name, String nameUppercase) {
     getHelper().getUserManager().modifyUser(target.getUniqueId(), user ->
-        user.data().remove(InheritanceNode.builder(name.toLowerCase()).withContext("server", "football").build())
+        user.data().remove(InheritanceNode.builder(name.toLowerCase()).build())
     ).whenComplete((v, th) -> {
-      getLogger().send("fcfa", Lang.USER_REMOVED_FROM_A_TEAM.getConfigValue(new String[]{target.getName(), nameUppercase}));
+      getLogger().send("fcba", Lang.USER_REMOVED_FROM_A_TEAM.getConfigValue(new String[]{target.getName(), nameUppercase}));
       if (th != null) getLogger().send(sender, Lang.USER_NOT_IN_THAT_TEAM.getConfigValue(new String[]{target.getName(), nameUppercase}));
     });
   }
