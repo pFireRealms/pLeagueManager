@@ -53,10 +53,10 @@ public class Logger {
     final String serverNameVersion = serverName + " - " + version;
 
     banner.add("&r");
-    banner.add("&c   888888 &f88     &48b    d8   &c" + pluginName);
-    banner.add("&c   88  88 &f88     &488b  d88   &4Authors: &f" + formattedAuthors);
-    banner.add("&c   888888 &f88  .o &488YbdP88");
-    banner.add("&c   88     &f88ood8 &488 YY 88   &8Running on " + serverNameVersion);
+    banner.add("&4   888888 &f88     &48b    d8   &c" + pluginName);
+    banner.add("&4   88  88 &f88     &488b  d88   &4Authors: &f" + formattedAuthors);
+    banner.add("&4   888888 &f88  .o &488YbdP88");
+    banner.add("&4   88     &f88ood8 &488 YY 88   &8Running on " + serverNameVersion);
     banner.add("&r");
 
     for (final String message : banner)
