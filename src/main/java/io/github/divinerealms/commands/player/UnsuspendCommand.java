@@ -40,7 +40,7 @@ public class UnsuspendCommand implements CommandExecutor {
         }
 
         if (args[1].equalsIgnoreCase(target.getName())) {
-          final InheritanceNode node = InheritanceNode.builder("suspend").withContext("server", "football").build();
+          final InheritanceNode node = InheritanceNode.builder("suspend").build();
 
           if (node.hasExpiry()) {
             getHelper().getUserManager().modifyUser(target.getUniqueId(), user -> {
