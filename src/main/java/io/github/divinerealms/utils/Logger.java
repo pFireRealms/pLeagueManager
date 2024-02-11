@@ -61,12 +61,12 @@ public class Logger {
     final String version = getServer().getBukkitVersion();
     final String serverNameVersion = serverName + " - " + version;
 
-    getBanner().add("&r");
-    getBanner().add("&d  88     &e8b    d8   &2" + pluginName);
-    getBanner().add("&d  88     &e88b  d88   &5Authors: &d" + formattedAuthors);
-    getBanner().add("&d  88  .o &e88YbdP88");
-    getBanner().add("&d  88ood8 &e88 YY 88   &8Running on " + serverNameVersion);
-    getBanner().add("&r");
+    banner.add("&r");
+    banner.add("&d   888888  88     &e8b    d8   &2" + pluginName);
+    banner.add("&d   88  88  88     &e88b  d88   &5Authors: &d" + formattedAuthors);
+    banner.add("&d   888888  88  .o &e88YbdP88");
+    banner.add("&d   88      88ood8 &e88 YY 88   &8Running on " + serverNameVersion);
+    banner.add("&r");
 
     for (final String message : getBanner())
       getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', message));
