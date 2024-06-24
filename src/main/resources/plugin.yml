@@ -5,7 +5,6 @@ authors:
   - Maatijaa
 depend:
   - LuckPerms
-  - WorldGuard
 load: POSTWORLD
 main: io.github.firerealms.pLeagueManager
 commands:
